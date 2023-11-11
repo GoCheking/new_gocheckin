@@ -1,0 +1,19 @@
+<div class="contenedor border">
+    <div class="borde"> 
+<form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+
+    <div class="contenedor__elemento contenedor__elemento--25">
+      <!-- aqui va el logo y el texto inficativo-->
+     <app-header></app-header>
+    </div>
+    <div class="contenedor__elemento contenedor__elemento--50">
+        <!-- aqui va el formulario-->
+        <app-main></app-main>
+    </div>
+    <div class="contenedor__elemento contenedor__elemento--30">
+       <!--qui va el registarse politicas y recuperar contraseña-->
+       <app-footer></app-footer>
+    </div>
+  
+
+</form>

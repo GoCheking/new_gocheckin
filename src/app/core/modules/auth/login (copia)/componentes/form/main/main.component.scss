@@ -1,0 +1,194 @@
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 800px; // Ajusta el ancho máximo según tus necesidades
+    margin: 0 auto; // Centra el contenedor horizontalmente
+    padding: 20px; // Espacio interior para separar los elementos
+  
+    .item {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+     // Espacio interior para separar elementos dentro de cada div
+  
+      label {
+        flex: 1; // El label ocupa todo el espacio disponible
+        text-align: center; // Centra el texto horizontalmente
+        font-size: 24px;
+        font-weight: 500;
+        margin-bottom: 20px;
+      }
+  
+      input {
+        flex: 3; // El input ocupa más espacio que el label
+        text-align: center; // Centra el input horizontalmente
+      }
+  
+      &--checkbox {
+        flex-direction: column; // Cambia la dirección para los elementos del último div
+        align-items: center; // Alinea los elementos al centro horizontal y verticalmente
+        input {
+          margin-top: 10px; // Espacio entre el checkbox y el texto
+        }
+      }
+    }
+  }
+  .botonEnviar{
+    margin-bottom:20px;
+  }
+
+  .contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 800px; // Ajusta el ancho máximo según tus necesidades
+    margin: 0 auto; // Centra el contenedor horizontalmente
+    padding: 20px; // Espacio interior para separar los elementos
+  
+    .item {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+     // Espacio interior para separar elementos dentro de cada div
+  
+      label {
+        flex: 1; // El label ocupa todo el espacio disponible
+        text-align: center; // Centra el texto horizontalmente
+        font-size: 24px;
+        font-weight: 500;
+        margin-bottom: 20px;
+      }
+  
+      input {
+        flex: 3; // El input ocupa más espacio que el label
+        text-align: center; // Centra el input horizontalmente
+      }
+  
+      &--checkbox {
+        flex-direction: column; // Cambia la dirección para los elementos del último div
+        align-items: center; // Alinea los elementos al centro horizontal y verticalmente
+        input {
+          margin-top: 10px; // Espacio entre el checkbox y el texto
+        }
+      }
+    }
+  }
+  .botonEnviar{
+    margin-bottom:20px;
+  }
+
+
+@media (max-width: 480px) {
+
+  .contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 250px; // Ajusta el ancho máximo según tus necesidades
+    margin: 0 auto; // Centra el contenedor horizontalmente
+    padding: 0px; // Espacio interior para separar los elementos
+  
+    .item {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 10px;
+     // Espacio interior para separar elementos dentro de cada div
+  
+      label {
+        flex: 1; // El label ocupa todo el espacio disponible
+        text-align: center; // Centra el texto horizontalmente
+        font-size: 10x;
+        font-weight: 500;
+        margin-bottom: 20px;
+        display: none;
+       
+      }
+  
+      input {
+        flex: 3; // El input ocupa más espacio que el label
+        text-align: center; // Centra el input horizontalmente
+      }
+  
+      &--checkbox {
+        flex-direction: column; // Cambia la dirección para los elementos del último div
+        align-items: center; // Alinea los elementos al centro horizontal y verticalmente
+        input {
+          margin-top: 10px; // Espacio entre el checkbox y el texto
+        }
+      }
+    }
+  }
+  .botonEnviar{
+    margin-bottom:20px;
+  }
+
+}  
+
+
+
+@media (max-width: 360px) {
+
+  .contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 250px; // Ajusta el ancho máximo según tus necesidades
+    margin: 0 auto; // Centra el contenedor horizontalmente
+    padding: -5px; // Espacio interior para separar los elementos
+  
+    .item {
+      width: 80%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 10px;
+     // Espacio interior para separar elementos dentro de cada div
+  
+      label {
+        flex: 1; // El label ocupa todo el espacio disponible
+        text-align: center; // Centra el texto horizontalmente
+        font-size: 10x;
+        font-weight: 500;
+        margin-bottom: 20px;
+        display: none;
+       
+      }
+  
+      input {
+        flex: 3; // El input ocupa más espacio que el label
+        text-align: center; // Centra el input horizontalmente
+      }
+  
+      &--checkbox {
+        flex-direction: column; // Cambia la dirección para los elementos del último div
+        align-items: center; // Alinea los elementos al centro horizontal y verticalmente
+        input {
+          margin-top: 10px; // Espacio entre el checkbox y el texto
+        }
+      }
+    }
+  }
+  .botonEnviar{
+    margin-bottom:20px;
+  }
+
+
+
+}  

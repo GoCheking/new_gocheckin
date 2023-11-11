@@ -1,0 +1,188 @@
+
+// Colores primarios
+$colorPrimario: #192d72;
+$colorSecundario: #0161a8;
+.foto {
+    position: relative;
+    width: 100% ;/* Ajusta el ancho del contenedor según tus necesidades */
+    height: 620px; /* Ajusta la altura del contenedor según tus necesidades */
+margin-top: 50px;
+  }
+  .foto__imagen {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+  
+    border-radius: 0 150px 0 150px; /* Arriba a la izquierda y abajo a la derecha */
+    transition: transform 0.4s, box-shadow 0.4s, opacity 0.4s; /* Aumenta la duración de la transición a 0.4 segundos */
+    opacity: 1; /* Establece la opacidad inicial en 1 (completamente visible) */
+  }
+  
+  .foto__imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .foto__imagen:hover {
+   
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Agrega una sombra al hacer hover */
+    opacity: 0.9; /* Cambia la opacidad a 0.8 al hacer hover */
+  }
+  .foto__texto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(243, 228, 228, 0.5); /* Fondo para el div centrado */
+    color: #fff;
+    padding: 10px;
+    width: 100%;
+    font-size: 10rem;
+  
+    /* Agrega el texto o contenido que desees */
+    content: "Texto centrado";
+    text-align: center;
+    h2{
+         font-size: 3rem;
+         font-weight: 700;
+         color: $colorPrimario;
+         padding: 15px;
+
+    
+}
+
+.spanInterno{
+
+    color: $colorSecundario
+}
+
+
+  }
+
+/* Estilos para movil grandes */
+@media (max-width: 1600px) {
+  .foto {
+    position: relative;
+    width: 35rem ;/* Ajusta el ancho del contenedor según tus necesidades */
+    height: 35rem; /* Ajusta la altura del contenedor según tus necesidades */
+margin-top: 4rem;
+  }
+  .foto__imagen {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+  
+    border-radius: 0 80px 0 80px; /* Arriba a la izquierda y abajo a la derecha */
+    transition: transform 0.4s, box-shadow 0.4s, opacity 0.4s; /* Aumenta la duración de la transición a 0.4 segundos */
+    opacity: 1; /* Establece la opacidad inicial en 1 (completamente visible) */
+  }
+  
+  .foto__imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .foto__imagen:hover {
+   
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Agrega una sombra al hacer hover */
+    opacity: 0.9; /* Cambia la opacidad a 0.8 al hacer hover */
+  }
+  .foto__texto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(243, 228, 228, 0.5); /* Fondo para el div centrado */
+    color: #fff;
+    padding: 0px;
+    width: 100%;
+    font-size: 2rem;
+  
+    /* Agrega el texto o contenido que desees */
+    content: "Texto centrado";
+    text-align: center;
+    h2{
+         font-size: 3rem;
+         font-weight: 700;
+         color: $colorPrimario;
+         padding: 15px;
+
+    
+}
+
+.spanInterno{
+
+    color: $colorSecundario
+}
+
+
+  }
+
+}   
+
+/* Estilos para movil grandes */
+@media (max-width: 480px) {
+  .foto {
+    position: relative;
+    width: 100% ;/* Ajusta el ancho del contenedor según tus necesidades */
+    height: 400px; /* Ajusta la altura del contenedor según tus necesidades */
+margin-top: 0px;
+  }
+  .foto__imagen {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+  
+    border-radius: 0 80px 0 80px; /* Arriba a la izquierda y abajo a la derecha */
+    transition: transform 0.4s, box-shadow 0.4s, opacity 0.4s; /* Aumenta la duración de la transición a 0.4 segundos */
+    opacity: 1; /* Establece la opacidad inicial en 1 (completamente visible) */
+  }
+  
+  .foto__imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .foto__imagen:hover {
+   
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Agrega una sombra al hacer hover */
+    opacity: 0.9; /* Cambia la opacidad a 0.8 al hacer hover */
+  }
+  .foto__texto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(243, 228, 228, 0.5); /* Fondo para el div centrado */
+    color: #fff;
+    padding: 0px;
+    width: 100%;
+    font-size: 2rem;
+  
+    /* Agrega el texto o contenido que desees */
+    content: "Texto centrado";
+    text-align: center;
+    h2{
+         font-size: 3rem;
+         font-weight: 700;
+         color: $colorPrimario;
+         padding: 15px;
+
+    
+}
+
+.spanInterno{
+
+    color: $colorSecundario
+}
+
+
+  }
+
+}   

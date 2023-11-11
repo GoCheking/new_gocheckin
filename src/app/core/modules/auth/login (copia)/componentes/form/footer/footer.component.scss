@@ -1,0 +1,85 @@
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center; // Centra horizontalmente
+    justify-content: center; // Centra verticalmente
+    height: 8rem; // Ajusta la altura según tus necesidades
+    margin:1.8rem
+
+  }
+  
+  .item {
+    width: 100%;
+    text-align: center;
+  // Espacio vertical entre los elementos
+  }
+  
+  
+
+
+$colorLink: #0199a8;
+
+.cambio-color1{
+    margin-bottom: 30px;
+    font-size: 20px;
+    color: $colorLink; /* Color inicial */
+    transition: color 0.3s, opacity 0.3s, transform 0.3s; /* Agrega transiciones para color, opacidad y transformación */
+  }
+  
+  .cambio-color1:hover {
+    color:blue;  /* Color al hacer hover (azul más brillante) */
+    opacity: 0.8; /* Cambia la opacidad al hacer hover */
+    transform: scale(1.1); /* Aumenta el tamaño al hacer hover (10%) */
+  }
+ 
+  .borderTop {
+    margin-top: 10px;
+    
+  // Espacio vertical entre los elementos
+  }
+
+  @media (max-width: 360px) {
+    .contenedor {
+      display: flex;
+      flex-direction: column;
+      align-items: center; // Centra horizontalmente
+      justify-content: center; // Centra verticalmente
+      height: 8rem; // Ajusta la altura según tus necesidades
+      margin:1.8rem
+  
+    }
+    
+    .item {
+      width: 100%;
+      text-align: center;
+    // Espacio vertical entre los elementos
+    }
+    
+    .espacio{
+      width: 10px;
+
+    }
+  
+  
+  $colorLink: #0199a8;
+  
+  .cambio-color1{
+      margin-bottom: 30px;
+      font-size: 10px;
+      color: $colorLink; /* Color inicial */
+      transition: color 0.3s, opacity 0.3s, transform 0.3s; /* Agrega transiciones para color, opacidad y transformación */
+    }
+    
+    .cambio-color1:hover {
+      color:blue;  /* Color al hacer hover (azul más brillante) */
+      opacity: 0.8; /* Cambia la opacidad al hacer hover */
+      transform: scale(1.1); /* Aumenta el tamaño al hacer hover (10%) */
+    }
+   
+    .borderTop {
+      margin-top: 0px;
+      
+    // Espacio vertical entre los elementos
+    }
+    
+   }

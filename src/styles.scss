@@ -1,0 +1,193 @@
+@use '@angular/material' as mat;
+
+@include mat.core();
+
+$my-primary: mat.define-palette(mat.$blue-palette, 500);
+$my-accent: mat.define-palette(mat.$orange-palette, A200, A100, A400);
+
+$my-theme: mat.define-light-theme((
+ color: (
+   primary: $my-primary,
+   accent: $my-accent,
+ ),
+ density: 0,
+));
+
+// Emit theme-dependent styles for common features used across multiple components.
+@include mat.core-theme($my-theme);
+
+// Emit styles for MatButton based on `$my-theme`. Because the configuration
+// passed to `define-light-theme` omits typography, `button-theme` will not
+// emit any typography styles.
+@include mat.button-theme($my-theme);
+
+// Include the theme mixins for other components you use here.
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+$font-family-raleway: 'Raleway', sans-serif;
+
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-bold: 700;
+
+$font-size-small: 2.3;
+$font-size-medium: 1px;
+$font-size-large: 1.2rem;
+
+// Colores primarios
+$colorPrimario: #192d72;
+$colorSecundario: #0161a8;
+$terciciario: #bca7a6;
+
+// Color para los links
+$colorLink: #0199a8;
+
+// Color de fondo
+$colorFondo: #f6f8fa;
+
+// Color para contraste
+$colorContraste: #ffc94f;
+
+
+
+
+// Variables de espaciado
+$margenExterno: 8px;
+$margin-unit: $margenExterno * 2;
+
+// Variables de bordes
+$border: 2px;
+$border-radius: 4px;
+
+/* Definimos las Custom properties */
+:root{
+    /* Colores */
+    --negro         : #393939;
+    
+    /* Tipografía */
+    
+    --font-family: 'Raleway', sans-serif;
+
+  }
+    
+  /* (Opcional) Las adaptamos al modo oscuro */
+  @media (prefers-color-scheme: dark) {
+    :root{
+        --negro         : #ececec;
+    }
+  }
+  
+  /* (Opcional) Configuramos si un usuario ha activado el modo alto contraste. (WD) */
+  @media (prefers-contrast: high){
+      :root{color:#393939}
+  }
+  
+  /* (Opcional) Desactivamos los animations en el caso de que el usuario haya configurado el modo sin animation */
+  @media (prefers-reduced-motion: reduce) {
+    * {
+      animation: none !important;
+      transition: none !important;
+    }
+  }
+  
+  /* Reseteamos los margin y paddings de todas las etiquetas */
+  * , *::before , *::after{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    vertical-align: baseline;
+  }
+  *::before , *::after{
+    display: block;
+  }
+  
+  /* Evitamos problemas con las imagenes */
+  img , picture , video , iframe , figure{
+    max-width: 100%;
+    width: 100%;
+    display: block;
+    /* (Opcional) */ object-fit: cover;        
+    /* (Opcional) */ object-position: center center;
+  }
+  
+  /* Reseteamos los enlaces para funcionar como cajas... */
+  a {
+    display: block;
+    text-decoration: none;
+    color:inherit;
+    font-size:inherit;
+  }
+  /* ... excepto los que se encuentran en párrafos */
+  p a {
+    display: inline;
+  }
+  
+  /* Quitamos los puntos de los <li> */
+  li {
+    list-style-type: none;
+  }
+  
+  /* (Opcional) Configuramos anclas suaves */
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Desactivamos estilos por defecto de las principales etiquetas de texto */
+  h1 , h2 , h3 , h4 , h5 , h6 , p ,span , a , strong , blockquote , i , b , u , em {
+    font-size: inherit;
+    font-weight: inherit;
+    font-style: inherit;
+    text-decoration: none;
+    color:inherit;
+  }
+  /* Evitamos problemas con los pseudoelementos de quotes */
+  blockquote:before, blockquote:after, q:before, q:after {
+      content: '';
+      content: none;
+  }
+  
+  /* (Opcional) Configuramos el texto que seleccionamos */
+  ::selection {
+    background-color: var(--negro);
+    color: var(--blanco);
+  }
+  
+  /* Nivelamos problemas de tipografías y colocación de formularios */
+  form , input, textarea, select , button , label{
+      font-family: inherit;
+      font-size: inherit;
+      hyphens: auto;
+      background-color: transparent;
+      color:inherit;
+      display: block;
+      /* (Opcional) */ appearance: none;
+  }
+  
+  /* Reseteamos las tablas */
+  table , tr , td {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  
+  /* Evitamos problemas con los SVG */
+  svg{
+      width: 100%;
+      display: block;
+      fill: currentColor;
+  }
+  
+  /* Configuramos la tipografía para toda la web */
+  body {
+    min-height  : 100vh;
+    font-size   : 100%;
+    background-color: #f6f8fa;
+    font-family : var(--tipo-principal);
+    color       : var(--negro);
+    /* (Opcional) */ hyphens: auto;
+    /* (Opcional) */ font-smooth: always;
+    /* (Opcional) */ -webkit-font-smoothing: antialiased;
+    /* (Opcional) */ -moz-osx-font-smoothing: grayscale;
+  }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

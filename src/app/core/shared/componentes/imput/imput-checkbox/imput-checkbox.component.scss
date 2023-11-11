@@ -1,0 +1,14 @@
+
+$colorLink: #0199a8;
+
+.cambio-color {
+    color: $colorLink; /* Color inicial */
+    transition: color 0.3s, opacity 0.3s, transform 0.3s; /* Agrega transiciones para color, opacidad y transformación */
+  }
+  
+  .cambio-color:hover {
+    color:blue;  /* Color al hacer hover (azul más brillante) */
+    opacity: 0.8; /* Cambia la opacidad al hacer hover */
+    transform: scale(1.1); /* Aumenta el tamaño al hacer hover (10%) */
+  }
+ 

@@ -1,0 +1,20 @@
+
+
+
+
+
+
+/* Estilos para el botón pequeño */
+$terciario: #bca7a6;
+$colorCercano1: #997a36;
+
+
+.boton-grande1 {
+    height: 2rem; /* Altura del botón pequeño */
+    font-size: 0.875; /* Tamaño del texto del botón pequeño */
+    border-radius: 2rem; /* Bordes redondeados en los cuatro lados */
+    padding: 0.5rem 1rem; /* Relleno del botón pequeño */
+    width: 16rem;
+    background: linear-gradient(to left,$colorCercano1,$terciario,);
+  }
+

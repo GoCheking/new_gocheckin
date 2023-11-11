@@ -1,0 +1,21 @@
+.botones-continer{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: row wrap;
+    width:1200px ;
+ 
+    background-color:#bca7a6;   
+     margin:2rem;
+
+}
+
+.boton{
+    padding: 2rem;
+    margin:2rem
+    
+}
+.titulo{
+    text-align: center;
+    font-size: 18px;
+}

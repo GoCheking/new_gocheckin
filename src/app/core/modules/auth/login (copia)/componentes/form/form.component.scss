@@ -1,0 +1,366 @@
+$terciciario: #bca7a6;
+
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    width:100%; /* Ajusta el ancho del contenedor según tus necesidades */
+    height: 1000px; /* Ajusta la altura del contenedor según tus necesidades */
+   padding: 0 80px;
+   border:2rem sold $terciciario;
+  
+  
+    &__elemento {
+      flex: 1;
+    
+      padding: 0 80px; 
+      text-align: center;
+  
+      &--25 {
+   
+        flex-basis: 15%;
+      }
+  
+      &--30 {
+
+        flex-basis: 35%;
+        min-height: 100px;
+      }
+      &--50 {
+        background-color:$terciciario ;
+        flex-basis: 50%;
+        width: 80%;
+        margin: 0 auto;
+      }
+    }
+  }
+  .borde {
+    padding: 1rem 2rem;
+    margin: 1rem 2rem;
+    background-color: #f6f8fa;
+    height: 700px;
+    border-radius: 5rem;
+  
+    animation: cambioOpacidad 4s infinite; /* Aplicar animación durante 4 segundos y repetir infinitamente */
+  }
+  
+  @keyframes cambioOpacidad {
+    0% {
+      opacity: 0.8; /* Opacidad inicial */
+    }
+    25% {
+      opacity: 0.7; /* Cambio en la opacidad a los 25% de la animación */
+    }
+    50% {
+      opacity: 0.75; /* Cambio en la opacidad a los 50% de la animación */
+    }
+    75% {
+      opacity: 0.85; /* Cambio en la opacidad a los 75% de la animación */
+    }
+    100% {
+      opacity: 0.8; /* Opacidad final, regreso al valor inicial */
+    }
+  }
+  
+  .borde:hover {
+    animation: none; /* Detener la animación al pasar el mouse */
+    opacity: 0.9; /* Cambiar la opacidad al pasar el mouse */
+  }  
+
+
+  @media (max-width: 1600px) {  
+
+    $terciciario: #bca7a6;
+  
+  
+    .contenedor {
+        display: flex;
+        flex-direction: column;
+        width:100%; /* Ajusta el ancho del contenedor según tus necesidades */
+        height: 600px; /* Ajusta la altura del contenedor según tus necesidades */
+       padding: 0 0px;
+    
+      
+      
+        &__elemento {
+          flex: 1;
+        
+          padding: 0 80px; 
+          text-align: center;
+      
+          &--25 {
+       
+            flex-basis: 15%;
+          }
+      
+          &--30 {
+    
+            flex-basis: 35%;
+            min-height: 100px;
+          }
+          &--50 {
+            background-color:$terciciario ;
+            flex-basis: 50%;
+            width: 80%;
+            margin: 0 auto;
+          }
+        }
+      }
+      .borde {
+        padding: 0rem 0rem;
+      
+        background-color: #f6f8fa;
+        height: 700px;
+        border-radius: 5rem;
+        width: 25rem;
+
+      
+        animation: cambioOpacidad 4s infinite; /* Aplicar animación durante 4 segundos y repetir infinitamente */
+      }
+      
+      @keyframes cambioOpacidad {
+        0% {
+          opacity: 0.8; /* Opacidad inicial */
+        }
+        25% {
+          opacity: 0.7; /* Cambio en la opacidad a los 25% de la animación */
+        }
+        50% {
+          opacity: 0.75; /* Cambio en la opacidad a los 50% de la animación */
+        }
+        75% {
+          opacity: 0.85; /* Cambio en la opacidad a los 75% de la animación */
+        }
+        100% {
+          opacity: 0.8; /* Opacidad final, regreso al valor inicial */
+        }
+      }
+      
+      .borde:hover {
+        animation: none; /* Detener la animación al pasar el mouse */
+        opacity: 0.9; /* Cambiar la opacidad al pasar el mouse */
+      }  
+    
+  
+  }  
+  
+  
+  /* Estilos para tablets */
+@media (max-width: 1024px) {  
+
+  $terciciario: #bca7a6;
+
+
+  .contenedor {
+      display: flex;
+      flex-direction: column;
+      width:100%; /* Ajusta el ancho del contenedor según tus necesidades */
+      height: 1000px; /* Ajusta la altura del contenedor según tus necesidades */
+     padding: 0 80px;
+     border:2rem sold $terciciario;
+    
+    
+      &__elemento {
+        flex: 1;
+      
+        padding: 0 80px; 
+        text-align: center;
+    
+        &--25 {
+     
+          flex-basis: 15%;
+        }
+    
+        &--30 {
+  
+          flex-basis: 35%;
+          min-height: 100px;
+        }
+        &--50 {
+          background-color:$terciciario ;
+          flex-basis: 50%;
+          width: 100%;
+          margin: 0 auto;
+        }
+      }
+    }
+    .borde {
+      padding: 1rem 2rem;
+      margin: 1rem 2rem;
+      background-color: #f6f8fa;
+      height: 700px;
+      border-radius: 5rem;
+    
+      animation: cambioOpacidad 4s infinite; /* Aplicar animación durante 4 segundos y repetir infinitamente */
+    }
+    
+    @keyframes cambioOpacidad {
+      0% {
+        opacity: 0.8; /* Opacidad inicial */
+      }
+      25% {
+        opacity: 0.7; /* Cambio en la opacidad a los 25% de la animación */
+      }
+      50% {
+        opacity: 0.75; /* Cambio en la opacidad a los 50% de la animación */
+      }
+      75% {
+        opacity: 0.85; /* Cambio en la opacidad a los 75% de la animación */
+      }
+      100% {
+        opacity: 0.8; /* Opacidad final, regreso al valor inicial */
+      }
+    }
+    
+    .borde:hover {
+      animation: none; /* Detener la animación al pasar el mouse */
+      opacity: 0.9; /* Cambiar la opacidad al pasar el mouse */
+    }  
+  
+
+}  
+
+
+@media (max-width: 480px) {
+
+
+  .contenedor {
+    display: flex;
+    flex-direction: column;
+    width:100%; /* Ajusta el ancho del contenedor según tus necesidades */
+    height:100x; /* Ajusta la altura del contenedor según tus necesidades */
+   padding: 20px 2px;
+   border:2rem sold $terciciario;
+  
+  
+    &__elemento {
+      flex: 1;
+    
+      padding: 0 0px; 
+      text-align: center;
+  
+      &--25 {
+   
+        flex-basis: 15%;
+      }
+  
+      &--30 {
+
+        flex-basis: 30%;
+        min-height: 100px;
+      }
+      &--50 {
+        background-color:$terciciario ;
+        flex-basis: 55%;
+        width: 80%;
+        margin: 0 auto;
+      }
+    }
+  }
+  .borde {
+    padding: 0rem 0rem;
+    margin: 0rem 0rem;
+    background-color: #f6f8fa;
+    height: 600px;
+    border-radius: 5rem;
+    width: 100%;
+  
+    animation: cambioOpacidad 4s infinite; /* Aplicar animación durante 4 segundos y repetir infinitamente */
+  }
+  
+  @keyframes cambioOpacidad {
+    0% {
+      opacity: 0.8; /* Opacidad inicial */
+    }
+    25% {
+      opacity: 0.7; /* Cambio en la opacidad a los 25% de la animación */
+    }
+    50% {
+      opacity: 0.75; /* Cambio en la opacidad a los 50% de la animación */
+    }
+    75% {
+      opacity: 0.85; /* Cambio en la opacidad a los 75% de la animación */
+    }
+    100% {
+      opacity: 0.8; /* Opacidad final, regreso al valor inicial */
+    }
+  }
+  
+  .borde:hover {
+    animation: none; /* Detener la animación al pasar el mouse */
+    opacity: 0.9; /* Cambiar la opacidad al pasar el mouse */
+  }  
+
+}  
+
+
+@media (max-width: 360px) {
+
+
+  .contenedor {
+    display: flex;
+    flex-direction: column;
+    width:100%; /* Ajusta el ancho del contenedor según tus necesidades */
+    height:150px; /* Ajusta la altura del contenedor según tus necesidades */
+   padding: 0px 0px;
+ 
+  
+  
+    &__elemento {
+      flex: 1;
+   
+      text-align: center;
+  
+      &--25 {
+   
+        flex-basis: 15%;
+      }
+  
+      &--30 {
+
+        flex-basis: 35%;
+        min-height: 100px;
+      }
+      &--50 {
+        background-color:$terciciario ;
+        flex-basis: 50%;
+        width: 100%;
+        margin: 0 auto;
+      }
+    }
+  }
+  .borde {
+  
+    background-color: #f6f8fa;
+    height: 430px;
+    border-radius: 2rem;
+    width: 100%;
+    padding: 0 5px;
+  
+    animation: cambioOpacidad 4s infinite; /* Aplicar animación durante 4 segundos y repetir infinitamente */
+  }
+  
+  @keyframes cambioOpacidad {
+    0% {
+      opacity: 0.8; /* Opacidad inicial */
+    }
+    25% {
+      opacity: 0.7; /* Cambio en la opacidad a los 25% de la animación */
+    }
+    50% {
+      opacity: 0.75; /* Cambio en la opacidad a los 50% de la animación */
+    }
+    75% {
+      opacity: 0.85; /* Cambio en la opacidad a los 75% de la animación */
+    }
+    100% {
+      opacity: 0.8; /* Opacidad final, regreso al valor inicial */
+    }
+  }
+  
+  .borde:hover {
+    animation: none; /* Detener la animación al pasar el mouse */
+    opacity: 0.9; /* Cambiar la opacidad al pasar el mouse */
+  }  
+
+}  

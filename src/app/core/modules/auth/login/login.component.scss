@@ -1,0 +1,419 @@
+.nuevo-div {
+  &__interno {
+    display: flex; // Muestra los elementos en línea
+    align-items: center; // Centra verticalmente los elementos
+  }
+}
+
+.bandera-link {
+  text-decoration: none; // Elimina el subrayado del enlace
+  color: #333; // Color de texto
+  margin-right: 10px; // Espacio entre los enlaces
+}
+
+.bandera-icon {
+  width: 24px; // Ajusta el ancho de los iconos
+  height: 24px; // Ajusta la altura de los iconos
+}
+
+
+
+.section {
+  &__content {
+    position: relative; // Establece posición relativa
+    
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 80px;
+    margin: 20px 80px; 
+    background-color: #ffffff;
+    border-radius: 7rem;
+    min-height: 900px;
+  }
+  
+  &__form {
+    width: 50%;
+    height: 710px;
+    padding: 10px;
+    margin: 0 80px;
+  }
+  
+  &__media {
+    width: 50%;
+    height: 710px;
+    padding: 10px;
+    padding-bottom: 50px;
+    margin: 0 20px;
+  }
+  
+  // Estilos para el nuevo div en la esquina superior izquierda
+  .nuevo-div {
+    position: absolute; // Establece posición absoluta
+    top: 90%; // Lo coloca en la parte superior
+    left: 45%; // Lo coloca en la parte izquierda
+    width: 250px; // Ajusta el ancho según tus necesidades
+    height: 100px; // Ajusta la altura según tus necesidades
+
+  }
+}
+.nuevo-div-interno{
+
+  display: flex;
+  justify-content: center;
+}
+.bandera-link {
+  text-decoration: none; // Elimina el subrayado del enlace
+  display: flex; // Muestra los elementos en línea
+  align-items: center; // Centra verticalmente los elementos
+  color: #333; // Color de texto
+
+  .bandera-icon {
+    width: 24px; // Ajusta el ancho del icono
+    height: 24px; // Ajusta la altura del icono
+    margin-right: 8px; // Espacio entre el icono y el texto
+  }
+
+  &:hover {
+    color: #0077B6; // Cambia el color del texto al pasar el mouse
+  }
+}
+
+
+/* Estilos para tablets */
+@media (max-width: 1600px) {
+
+  
+
+  .nuevo-div {
+    &__interno {
+      display: flex; // Muestra los elementos en línea
+      align-items: center; // Centra verticalmente los elementos
+    }
+  }
+  
+  .bandera-link {
+    text-decoration: none; // Elimina el subrayado del enlace
+    color: #333; // Color de texto
+    margin-right: 10px; // Espacio entre los enlaces
+  }
+  
+  .bandera-icon {
+    width: 24px; // Ajusta el ancho de los iconos
+    height: 24px; // Ajusta la altura de los iconos
+  }
+  
+  
+  
+  .section {
+    &__content {
+      body{max-width: 1600px;}
+      position: relative; // Establece posición relativa
+      
+      display: flex;
+      justify-content: space-between;
+      padding: 1.25rem 1.25;
+      margin: 1.25 1.25; 
+      background-color: #ffffff;
+      border-radius: 7rem;
+      min-height: 900px;
+    }
+    
+    &__form {
+      width: 50%;
+      height: 600px;
+      padding: 0px;
+     
+    }
+    
+    &__media {
+      width: 50%;
+      height: 600px;
+      padding: 0px;
+    
+      margin: 0 0px;
+    }
+    
+    // Estilos para el nuevo div en la esquina superior izquierda
+    .nuevo-div {
+      position: absolute; // Establece posición absoluta
+      top: 90%; // Lo coloca en la parte superior
+      left: 45%; // Lo coloca en la parte izquierda
+      width: 250px; // Ajusta el ancho según tus necesidades
+      height: 100px; // Ajusta la altura según tus necesidades
+  
+    }
+  }
+  .nuevo-div-interno{
+  
+    display: flex;
+    justify-content: center;
+  }
+  .bandera-link {
+    text-decoration: none; // Elimina el subrayado del enlace
+    display: flex; // Muestra los elementos en línea
+    align-items: center; // Centra verticalmente los elementos
+    color: #333; // Color de texto
+  
+    .bandera-icon {
+      width: 24px; // Ajusta el ancho del icono
+      height: 24px; // Ajusta la altura del icono
+      margin-right: 8px; // Espacio entre el icono y el texto
+    }
+  
+    &:hover {
+      color: #0077B6; // Cambia el color del texto al pasar el mouse
+    }
+  }
+  
+  
+
+ 
+
+
+}   
+
+
+
+
+@media (max-width: 1024px) {
+
+  .section {
+    &__content {
+      position: static; // Establece posición relativa
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      padding: 0px 0px;
+      margin: 10px 40px; 
+      
+      border-radius: 3rem;
+      min-height: 800px;
+    }
+    &__form {
+   
+      width: 100%;
+      height: 800px;
+      padding: 0x;
+      margin-top: -15;
+      order: 2;
+    }
+
+    .nuevo-div {
+      position: absolute; // Establece posición absoluta
+      top: 25%; // Lo coloca en la parte superior
+      left: 70%; // Lo coloca en la parte izquierda
+      width: 250px; // Ajusta el ancho según tus necesidades
+      height: 100px; // Ajusta la altura según tus necesidades
+  
+    }
+    
+    &__media {
+      
+   
+      display: none;
+    }
+
+    }
+
+}
+
+
+
+
+
+
+
+
+/* Estilos para tablets */
+@media (max-width: 1020px) {
+
+  .section {
+    &__content {
+      position: static; // Establece posición relativa
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      padding: 0px 0px;
+      margin: 10px 40px; 
+      
+      border-radius: 3rem;
+      min-height: 800px;
+    }
+    .nuevo-div {
+      position: absolute; // Establece posición absoluta
+      top: 780px; // Lo coloca en la parte superior (ajusta según sea necesario)
+      right: 0px; // Lo coloca en la parte derecha (ajusta según sea necesario)
+      width: 150px; // Ajusta el ancho según tus necesidades
+      height: 100px; // Ajusta la altura según tus necesidades
+    }
+
+    .nuevo-div__interno {
+      display: flex; // Muestra los elementos en línea
+      align-items: center; // Centra verticalmente los elementos
+    }
+
+    .bandera-link {
+      text-decoration: none; // Elimina el subrayado del enlace
+      color: #333; // Color de texto
+      margin-right: 0px; // Espacio entre los enlaces
+      width: 350px;
+      font-weight: 700;
+    }
+    &__form {
+   
+      width: 100%;
+      height: 800px;
+      padding: 0x;
+      margin: 0 0px;
+      order: 2;
+    }
+    &__media {
+      width: 100%;
+      height: 800px;
+      padding: 0x;
+      margin: 0 0px;
+      order: 3;
+      display: none;
+    }
+
+    }
+
+
+
+
+}   
+
+/* Estilos para movil grandes */
+@media (max-width: 480px) {
+ 
+
+  .section {
+    &__content {
+      position: static; // Establece posición relativa
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 100%;
+     
+      border-radius: 3rem;
+      min-height: 800px;
+      margin: 0 auto;
+    }
+    .nuevo-div {
+      position: absolute; // Establece posición absoluta
+      top: 650px; // Lo coloca en la parte superior (ajusta según sea necesario)
+      right: 0px; // Lo coloca en la parte derecha (ajusta según sea necesario)
+      width: 150px; // Ajusta el ancho según tus necesidades
+      height: 100px; // Ajusta la altura según tus necesidades
+    }
+
+    .nuevo-div__interno {
+      display: flex; // Muestra los elementos en línea
+      align-items: center; // Centra verticalmente los elementos
+    }
+
+    .bandera-link {
+      text-decoration: none; // Elimina el subrayado del enlace
+      color: #333; // Color de texto
+      margin-right: 0px; // Espacio entre los enlaces
+      width: 350px;
+      font-weight: 700;
+    }
+    &__form {
+   
+      width: 100%;
+      height: 700px;
+      padding: 0x;
+      margin: 0 0px;
+      order: 2;
+      
+    }
+    &__media {
+      width: 100%;
+      height: 500px;
+      padding: 0x;
+      margin: 0 0px;
+      order: 3;
+      display: none;
+    }
+
+    }
+
+
+
+
+}   
+
+/* Estilos para movil grandes */
+@media (max-width: 360px) {
+ 
+
+  .section {
+    &__content {
+      position: static; // Establece posición relativa
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 100%;
+     
+      border-radius: rem;
+      min-height: 750px;
+    }
+    .nuevo-div {
+      position: absolute; // Establece posición absoluta
+      top: 650px; // Lo coloca en la parte superior (ajusta según sea necesario)
+      right: 0px; // Lo coloca en la parte derecha (ajusta según sea necesario)
+      width: 150px; // Ajusta el ancho según tus necesidades
+      height: 100px; // Ajusta la altura según tus necesidades
+    }
+
+    .nuevo-div__interno {
+      display: flex; // Muestra los elementos en línea
+      align-items: center; // Centra verticalmente los elementos
+    }
+
+    .bandera-link {
+      text-decoration: none; // Elimina el subrayado del enlace
+      color: #333; // Color de texto
+    
+      width: 350px;
+      font-weight: 700;
+    }
+    &__form {
+   
+      width: 100%;
+      height: 450px;
+
+      order: 2;
+     
+      padding: 0%;
+    }
+    &__media {
+      width: 100%;
+      height: 500px;
+      display: none;
+    
+      order: 3;
+    }
+
+    }
+
+
+ 
+   // Estilos para el nuevo div en la esquina superior izquierda
+   .nuevo-div {
+    position: absolute; // Establece posición absoluta
+    top: 0%; // Lo coloca en la parte superior
+    left: 45%; // Lo coloca en la parte izquierda
+    width: 250px; // Ajusta el ancho según tus necesidades
+    height: 100px; // Ajusta la altura según tus necesidades
+
+  }
+ 
+
+
+}   

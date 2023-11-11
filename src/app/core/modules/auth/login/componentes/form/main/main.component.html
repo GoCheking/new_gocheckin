@@ -1,0 +1,24 @@
+<section class="contenedor">
+   
+    <div class="item">
+      <label class="label" for="nombre">Nombre:</label>
+   
+      <!--aqui va el  impo de nombre-->
+      <app-imput-nombre class ="reducir"></app-imput-nombre>
+    </div>
+    <div class="item">
+      <label class="label" for="contrasena">Contraseña:</label>
+      <!--aqui va el imput de contraseña-->
+      <app-imput-password class ="reducir"></app-imput-password>
+
+       
+    </div>
+    <div class="item item--checkbox">
+      <!--el botn y las aqui va las politicas-->
+      <div class="botonEnviar"> 
+      <app-boton-celular-grande-azul  [mensaje]="'Iniciar sesión'"></app-boton-celular-grande-azul>
+    </div>
+      <app-imput-checkbox></app-imput-checkbox>
+    </div>
+
+  </section>

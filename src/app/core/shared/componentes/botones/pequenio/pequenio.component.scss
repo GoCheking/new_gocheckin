@@ -1,0 +1,13 @@
+/* Estilos para el botón pequeño */
+$colorPrimario: #192d72;
+$colorSecundario: #0161a8;
+.small-button {
+    height: 2rem; /* Altura del botón pequeño */
+    font-size: 0.875; /* Tamaño del texto del botón pequeño */
+    border-radius: 2rem; /* Bordes redondeados en los cuatro lados */
+    padding: 0.5rem 1rem; /* Relleno del botón pequeño */
+    width: 10rem;
+    margin:2rem;
+    background: linear-gradient(to left, $colorPrimario, $colorSecundario);
+  }
+

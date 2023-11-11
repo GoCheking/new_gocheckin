@@ -1,0 +1,492 @@
+ $colorPrimario: #192d72;
+$colorSecundario: #0161a8;
+$terciciario: #bca7a6;
+
+// Color para los links
+$colorLink: #0199a8;
+
+// Color de fondo
+$colorFondo: #f6f8fa;
+
+// Color para contraste
+$colorContraste: #ffc94f;
+//div sidebar abirto
+
+
+/**********************************OPEN*********************/
+
+.sidebar{
+   position:fixed;
+    left:0;
+    top:o;
+    height: 100%;
+    width:16.25rem;
+    background-color:#11101d ;
+    z-index:100;
+    transition: all 0.5s ease-in-ease;
+ 
+    }  
+    //===========================LOGO================================//
+
+
+
+//div secioin logo 
+.sidebar .logo-details{
+    position:relative;
+    list-style: none;
+    display: flex;
+    width: 100%;
+    
+}
+
+
+
+ //img logo
+.sidebar .logo-details .i{
+    font-size: 1.875rem;
+    color:#ffff;
+    background: #11101d;
+    height:3.125rem;
+    min-width: 1.2rem;
+    text-align: center ;
+    line-height: 3.125rem;
+    cursor: pointer;
+}
+
+
+  
+   
+
+
+
+    //TEXTO DEL LOGO
+.sidebar .logo-details .logo-name {
+    font-size: 1.375rem;
+    color:#ffff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    transition: 0.3s ease;
+    transition-delay: 0.1s;
+} 
+
+
+
+//===========================MENU================================//
+
+
+//contenedor de menu
+.sidebar .nav-links{
+    background: $colorPrimario;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s, opacity 0.3s;
+    height: 100%;
+    padding: 1.875rem 0 9.375 0;
+    overflow: auto;}    
+       
+  //contenedor hover
+.sidebar .nav-links:hover {
+        opacity: 0.9;
+        box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.4);
+    }
+    
+
+    // contenedor esconder scroll      
+.sidebar .nav-links::-webkit-scrollbar{
+    
+    display:none;
+    
+    }
+
+    //-----control de li del menu----------/
+
+//quitar listas por defecto colocar posicion relativa
+ 
+.sidebar .nav-links li{
+    position:relative;
+    list-style: none;
+    display: flex;
+    width: 100%;
+
+    
+    }
+// li hover      
+.sidebar .nav-links li:hover{
+background:$colorSecundario;
+transition: all 0.4s ease;
+
+
+}
+
+//icono principal e icono de viñeta
+.sidebar .nav-links li{
+           
+   display:flex;
+    
+            
+            }
+
+.sidebar .nav-links li .i{
+           
+    height:3.125rem;
+    min-width: 1.2rem;
+    text-align: center ;
+    line-height: 3.125rem;
+    color: #fff;
+    font-size: 1.25rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    
+            
+            }
+ // comntrola el tañano del signo de viñeta
+
+ .icon-link {
+    display: flex;
+    align-items: center;
+}
+
+.icon-link img {
+    width: 30px; /* Ajusta el ancho de la imagen */
+    height: auto; /* Mantiene la proporción */
+    margin-right: 10px; /* Agrega un margen a la derecha para separar la imagen del texto */
+}
+
+.icon-link .link_name {
+    font-size: 14px; /* Ajusta el tamaño del texto */
+}
+
+//------------------------sub menu--------/
+//coloca al sub menu con margin negativo y quita los submenu
+          
+.sidebar .nav-links li .sub-menu{
+
+    padding: 0.375rem 0.375rem 0.875rem 5rem;
+            
+    margin-top: -0.625rem;   
+    background-color:#1d1b31; 
+    display:none;//quita los submenu
+    }  
+//cuando  se activa showMenu a traves de TS paparece el menu  
+
+    .sidebar .nav-links li.showMenu .sub-menu{
+           
+                 
+        display:block;
+      }
+
+//forma y color para el subn¡menu
+.sidebar .nav-links li .sub-menu a{
+color: #fff;
+font-size: 0.9375rem;
+padding: 0.3125rem 0rem;
+white-space: nowrap;
+opacity: 0.6;
+transition: all 0.3s ease;
+z-index:1000 ;
+
+
+    }  
+
+//cuando se ñada con TS rotate180
+//rotarà la viñeta 180grados
+.sidebar .nav-links li .i.arrow.rotate180 {
+transform: rotate(-180deg);
+}
+
+
+//forma del link a  dentro del subbmenu
+.sidebar .nav-links li .sub-menu a{
+    color: #fff;
+    font-size: 0.9375rem;
+    padding: 0.3125rem 0rem;
+    white-space: nowrap;
+    opacity: 0.6;
+    transition: all 0.3s ease;
+    z-index:1000 ;
+
+
+       }  
+
+    
+
+/**********************************CLOSE*********************/
+
+
+//===========================SIDEBAR================================//
+
+    //div sidebar
+
+    .sidebar.close{
+        width:4.875rem;
+       
+          }  
+
+    //LOGO
+ 
+
+//===========================LOGO================================//
+
+//texto logo
+.sidebar.close .logo-details .logo-name {
+    opacity: 0;
+    padding: none;
+    }
+
+//===========================Menu================================//
+
+//visible scroll
+
+.sidebar,close .nav-links{ 
+    overflow: visible;
+
+}
+//------------------------  opciones del menu------------//
+
+// al click al icono de viñeta se esconde
+
+.sidebar.close .nav-links li .i.arrow{
+           
+               
+    display: block;
+            
+            } 
+
+//cuando està cerrado el link a dentro de submenu desaparece
+//ay al hacer hover vuelve a
+ 
+.sidebar.close .nav-links .sub-menu {
+    display: none;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.sidebar.close .nav-links .nav-item:hover .sub-menu {
+    display: block;
+    opacity: 1;
+    pointer-events: auto;
+}
+//el submenu aqquire nuevas caracteristicas
+.sidebar.close .nav-links li .sub-menu{
+    position: absolute;
+    left: 100%;
+    top:-0.625rem;
+    margin-top: 0;
+    padding: 0.625rem 1.25rem ;
+    border-radius: 0 0.375rem 0.365rem 0;
+    transition:all 0.4s ease;
+    opacity:1; //a estos hay que comentarlo
+    display:block;
+    pointer-events: auto; //a estos hay que comentarl
+   z-index: 1000;
+
+       } 
+
+
+
+.sidebar .nav-links .menu-li{
+display: flex;
+flex-direction: column;
+
+}
+
+.sidebar .nav-links li .icon-link{
+    display:flex;
+    
+    align-items: center;
+    justify-content: space-between;
+           
+          
+                        
+                        }
+.sidebar .nav-links li a{
+    display: flex;
+    align-self: center;
+
+    text-decoration: none;
+           
+    
+                        
+                        }
+.sidebar .nav-links li a{
+text-decoration: none;
+font-size: 1.125rem;
+
+font-family: 'Poppins', sans-serif;
+font-weight: 400;
+color:#fff
+
+                                   
+}    
+.sidebar .profile-details{
+
+    position:fixed;
+    bottom: 0;
+    display:flex;
+    animation: center;
+    justify-content: space-between;
+    background: #1d1b31;
+    padding: 1rem 0;
+
+
+
+
+}
+.sidebar .profile-details .profile-content{
+    display: flex;
+    align-items: center;
+
+
+}
+
+.sidebar .profile-details img{
+    height: 3.5625rem;
+    width: 3.5625rem;
+    object-fit: cover;
+    border-radius:1rem;
+    margin: 0 0.875rem 0 0.75rem;
+    background: #1d1b31;;
+    padding: 0.625rem;
+
+
+
+}
+.sidebar .profile-details .profile-name,
+.sidebar .profile-details .job
+{font-size: 1.125rem;
+color:#ffff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+
+
+
+}
+.sidebar .profile-details .job{
+    font-size: 0.75rem;
+
+}
+
+
+
+.home-section{
+    position :relative;
+    background: red;
+    height: 6 rem;
+    left: 16.25rem; /* Cambié el valor a 18rem */
+    width: calc(100% - 16.25rem); 
+    transition: all 0.5s ;
+    z-index: 97; 
+}
+
+.sidebar.close ~ .home-section{ 
+    left: 4.875rem;
+    width: calc(100% - 4.875rem);
+    z-index: 98; 
+}
+  
+.home-section .home-content {
+    height: 3.75rem;
+    display:flex;
+    align-items: center;
+
+ 
+}
+
+.home-section .home-content .e,
+.home-section .home-content .text
+{
+
+   color:#11101d;
+   font-size:2.1875rem ;
+
+    
+ 
+}
+
+.home-section .home-content .e{
+margin:0 
+
+}
+.home-section .home-content .text{ 
+  font-size: 0 0.9375rem;  
+}
+
+.sidebar.close .nav-links li.showMenu .sub-menu {
+    left: 100%;
+    opacity: 1;
+    pointer-events: auto;
+} 
+
+
+.sidebar.close .nav-links li:hover .sub-menu {
+    display: block;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+
+
+.sidebar.close li:hover .profile-details .name-job {
+    opacity: 1;
+    z-index: 999; /* Asegura que esté en la capa superior */
+}
+
+.sidebar.close .profile-details .name-job {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: -1; /* Mantenlo en una capa inferior cuando no esté visible */
+}
+
+
+.sidebar.close .profile-details .name-job {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: -1; /* Mantenlo en una capa inferior cuando no esté visible */
+}
+
+
+
+/* Aplica estilos al ul cuando se haga hover en el a */
+.sidebar.close li:hover .sub-menu {
+    display: block;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* Estilos iniciales del ul */
+.sidebar.close .sub-menu {
+    opacity: 0;
+    display: none;
+    pointer-events: none;
+    transition: opacity 0.3s ease; /* Añade una transición suave */
+}
+
+
+
+
+.sidebar .escondido {
+    display: none;
+}
+.sidebar.close .escondido {
+    position: absolute;
+    top:70px;
+    left: 80px;
+    display:block;
+    background-color: #ffc94f;
+    width: 800px;
+    height: 7rem;
+
+}
+
+.sidebar.close li:hover .sub-menu {
+    display: block;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* Estilos iniciales del ul */
+.sidebar.close .sub-menu {
+    opacity: 0;
+    display: none;
+    pointer-events: none;
+    transition: opacity 0.3s ease; /* Añade una transición suave */
+}
